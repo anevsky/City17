@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	
+	<!--
+		We declare a new template named template-main.
+		This template is used for displaying the most pages.
+		It has some attributes. These attributes are placeholder for our contents.
+		For each attribute, we have assigned a corresponding JSP or text value.
+	-->
+	<definition name="template-main" template="/WEB-INF/views/layouts/main.jsp">
+		<put-attribute name="extra-directives" value="" />
+		<put-attribute name="extra-meta" value="" />
+		<put-attribute name="extra-link-rel" value="" />
+		<put-attribute name="extra-scripts" value="" />
+		<put-attribute name="body-content" value="" />
+	</definition>
+	
+	<!-- Concrete page. To use this page, your controller must return the definition name. -->
+	<definition name="greeting" extends="template-main">
+		<put-attribute name="extra-link-rel" value="/WEB-INF/views/tiles/greeting/extra-link-rel.jsp" />
+		<put-attribute name="extra-scripts" value="/WEB-INF/views/tiles/greeting/extra-scripts.jsp" />
+		<put-attribute name="body-content" value="/WEB-INF/views/tiles/greeting/body-content.jsp" />
+	</definition>
+	
+	<definition name="feed" extends="template-main">
+		<put-attribute name="extra-link-rel" value="/WEB-INF/views/tiles/feed/extra-link-rel.jsp" />
+		<put-attribute name="body-content" value="/WEB-INF/views/tiles/feed/body-content.jsp" />
+	</definition>
+	
+	<definition name="story" extends="template-main">
+		<put-attribute name="extra-link-rel" value="/WEB-INF/views/tiles/story/extra-link-rel.jsp" />
+		<put-attribute name="body-content" value="/WEB-INF/views/tiles/story/body-content.jsp" />
+	</definition>
+	
+	<definition name="tag" extends="template-main">
+		<put-attribute name="extra-link-rel" value="/WEB-INF/views/tiles/tag/extra-link-rel.jsp" />
+		<put-attribute name="body-content" value="/WEB-INF/views/tiles/tag/body-content.jsp" />
+	</definition>
+	
+	<definition name="error" extends="template-main">
+		<put-attribute name="body-content" value="/WEB-INF/views/tiles/error/body-content.jsp" />
+	</definition>
+	
+	<definition name="x-gallery/all-images" extends="template-main">
+		<put-attribute name="extra-link-rel" value="/WEB-INF/views/tiles/x-gallery/all-images/extra-link-rel.jsp" />
+		<put-attribute name="body-content" value="/WEB-INF/views/tiles/x-gallery/all-images/body-content.jsp" />
+	</definition>
+	
+	<definition name="x-gallery/single-image" extends="template-main">
+		<put-attribute name="extra-link-rel" value="/WEB-INF/views/tiles/x-gallery/single-image/extra-link-rel.jsp" />
+		<put-attribute name="body-content" value="/WEB-INF/views/tiles/x-gallery/single-image/body-content.jsp" />
+	</definition>
+	
+</tiles-definitions>
