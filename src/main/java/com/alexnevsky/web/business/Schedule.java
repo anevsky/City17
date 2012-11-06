@@ -43,7 +43,6 @@ public class Schedule implements InitializingBean {
 	 * @Scheduled(cron = "0 0 * * * *") // the top of every hour of every day
 	 * @Scheduled(cron = "${schedule.cron}") // see application.properties
 	 */
-
 	@Scheduled(cron = "${schedule.cron}")
 	public void doSomething() {
 		this.etodayContent.update();
