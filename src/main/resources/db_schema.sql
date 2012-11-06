@@ -3,12 +3,12 @@ CREATE TABLE IF NOT EXISTS `image` (
   `width` decimal(10,0) default NULL,
   `height` decimal(10,0) default NULL,
   `upload_date` datetime default NULL,
-  `name` varchar(100) default NULL,
+  `name` varchar(256) default NULL,
   `extension` varchar(5) default NULL,
   `alt` varchar(300) default NULL,
-  `category` varchar(50) default NULL,
-  `path` varchar(200) default NULL,
-  `thumb_path` varchar(200) default NULL,
+  `category` varchar(100) default NULL,
+  `path` varchar(256) default NULL,
+  `thumb_path` varchar(256) default NULL,
   `size` int(10) default NULL,
   PRIMARY KEY  (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 ;
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 
 CREATE TABLE IF NOT EXISTS `gallery` (
   `id` BIGINT NOT NULL AUTO_INCREMENT,
-  `name` varchar(200) DEFAULT NULL,
+  `name` varchar(256) DEFAULT NULL,
   `description` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id`),
   INDEX(`name`)
