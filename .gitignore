@@ -1,4 +1,3 @@
 .DS_Store
 target
 .settings
-src/main/webapp/WEB-INF/jdbc.properties
