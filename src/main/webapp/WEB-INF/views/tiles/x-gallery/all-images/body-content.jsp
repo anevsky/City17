@@ -9,14 +9,14 @@
 			<!--HolderStart-->
 			<div class="holder">
 				<ul class="top-menu">
-					<li class="about"><a href="<c:url value="/home" /> " >4youby.com</a> </li>
+					<li class="about"><a href="<c:url value="/home" /> " >atenwood.com</a> </li>
 					<%-- temp comment
 					<li class="login"><a href="<c:url value="/join" />"><spring:message code="join.now.free" /></a></li>
 					--%>
 				</ul>
 			</div>
 			<!--HolderEnd-Logo-->
-			<strong class="logo"> <a href="<c:url value="/home" />"><font color="#ffa1e9">4youby.com</font></a> 
+			<strong class="logo"> <a href="<c:url value="/home" />"><font color="#ffa1e9">atenwood.com</font></a> 
 				<strong><spring:message code="amazing.ultra.sexy.cyber.world" /></strong>
 			</strong>
 			<!--MenuStart-->

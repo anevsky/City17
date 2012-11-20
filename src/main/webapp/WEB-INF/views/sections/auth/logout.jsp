@@ -8,8 +8,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <script type="text/javascript">
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-21698633-4']);
-  _gaq.push(['_setDomainName', '4youby.com']);
+  _gaq.push(['_setAccount', 'UA-21698633-1']);
+  _gaq.push(['_setDomainName', 'atenwood.com']);
   _gaq.push(['_trackPageview']);
 
   (function() {

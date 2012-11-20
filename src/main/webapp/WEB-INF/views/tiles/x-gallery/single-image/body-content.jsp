@@ -6,7 +6,7 @@
 		<div class="container">
 			<nav>
 				<ul class="big-gallery">
-					<li><a href="<c:url value="/home" />">4YouBY.Com</a></li>
+					<li><a href="<c:url value="/home" />">Atenwood.Com</a></li>
 					<li><a href="<c:url value="${galleryUrl}" />">${galleryName}</a></li>
 				</ul>
 			</nav>
